@@ -5,7 +5,7 @@ This project uses the same schematic for the LCD screen taken from my buttonStat
 
 The program also checks if the block's current position is at any of the screen's extremities and if so, will not move the block off the screen.
 
-![alt tag](https://raw.githubusercontent.com/cedricium/Arduino-Projects/master/images/IMG_0206 (online-video-cutter.com).gif)
+<img src="https://raw.githubusercontent.com/cedricium/Arduino-Projects/master/images/IMG_0206 (online-video-cutter.com).gif" height=450px>
 
 ### YouTube
 [Here's a link](https://youtu.be/kW9xXWv-i0s) to a full length video of the project, which is also the sauce of the above gif.

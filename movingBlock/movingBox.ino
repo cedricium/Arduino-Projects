@@ -42,8 +42,9 @@ void setup() {
 void loop() {
   readJoystick();
 
+  // move right
   if (x > 1000) {
-    if (posX != 15) {
+    if (posX != 15) { // check to see if block is at far right side of screen
       posX += 1;
       lcd.setCursor(posX, posY);
       lcd.write(byte(0));
@@ -53,8 +54,9 @@ void loop() {
     }
   }
 
+  // move left
   else if (x < 10) {
-    if (posX != 0) {
+    if (posX != 0) {  // check to see if block is at far left side of screen
       posX -= 1;
       lcd.setCursor(posX, posY);
       lcd.write(byte(0));
@@ -64,8 +66,9 @@ void loop() {
     }
   }
 
+  // move down
   if (y > 1000) {
-    if (posY != 1) {
+    if (posY != 1) {  // check to see if block is at the bottom of screen
       posY += 1;
       lcd.setCursor(posX, posY);
       lcd.write(byte(0));
@@ -75,8 +78,9 @@ void loop() {
     }
   }
 
+  // move up
   if (y < 10) {
-    if (posY != 0) {
+    if (posY != 0) {  // check to see if block is at the top of screen
       posY -= 1;
       lcd.setCursor(posX, posY);
       lcd.write(byte(0));
